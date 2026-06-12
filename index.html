@@ -425,6 +425,48 @@ footer{background:#040C14;padding:40px 24px 28px;}
 .fu.vis{opacity:1;transform:translateY(0);}
 .d1{transition-delay:.08s;}.d2{transition-delay:.16s;}.d3{transition-delay:.24s;}
 
+/* ── PHOTO HERO ── */
+.hero-photo-wrap{
+  position:absolute;inset:0;z-index:0;
+  overflow:hidden;
+}
+.hero-photo-wrap img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
+  opacity:.18;
+  filter:saturate(0.6);
+}
+.hero-photo-wrap::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(160deg,rgba(10,26,40,.92) 0%,rgba(13,43,58,.85) 50%,rgba(10,56,40,.88) 100%);
+}
+
+/* ── FAMILY STRIP ── */
+.family-strip{
+  position:relative;overflow:hidden;
+  min-height:320px;
+  display:flex;align-items:center;
+}
+.family-strip img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center 30%;
+  filter:saturate(0.85);
+}
+.family-strip::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(10,26,40,.88) 0%,rgba(10,26,40,.6) 60%,rgba(10,26,40,.2) 100%);
+}
+.family-strip-inner{
+  position:relative;z-index:2;
+  padding:52px 24px;max-width:480px;
+}
+@media(min-width:768px){
+  .family-strip{min-height:400px;}
+  .family-strip-inner{padding:80px 52px;max-width:560px;}
+}
+.family-strip h2{font-family:'Sora',sans-serif;font-size:clamp(26px,6vw,40px);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-1.5px;margin-bottom:14px;}
+.family-strip h2 em{font-style:normal;color:var(--teal);}
+.family-strip p{font-size:15px;color:rgba(255,255,255,.65);line-height:1.75;font-weight:300;max-width:380px;}
+
 /* ── WAVE ── */
 .wave{display:block;width:100%;line-height:0;overflow:hidden;}
 
@@ -470,6 +512,7 @@ footer{background:#040C14;padding:40px 24px 28px;}
 
 <!-- ══ HERO ══ -->
 <section class="hero" id="top">
+  <div class="hero-photo-wrap"><img src="onature-hero.webp" alt="Femme buvant de l'eau pure à Abidjan" loading="eager" fetchpriority="high"></div>
   <canvas id="heroCanvas"></canvas>
   <div class="hbg"><div class="hbc hbc1"></div><div class="hbc hbc2"></div></div>
   <div class="hero-inner">
@@ -592,6 +635,15 @@ footer{background:#040C14;padding:40px 24px 28px;}
   </div>
 </div>
 </section>
+
+<!-- ══ FAMILY STRIP ══ -->
+<div class="family-strip">
+  <img src="onature-family.webp" alt="Famille à Abidjan buvant de l'eau pure O'Nature">
+  <div class="family-strip-inner">
+    <h2>L'eau pure,<br><em>pour toute<br>votre famille.</em></h2>
+    <p>Vos enfants, votre bébé, vos proches — ils méritent une eau sans bactéries ni plastique. Dès 19 990 FCFA/mois, protégez ceux qui comptent.</p>
+  </div>
+</div>
 
 <svg class="wave" style="background:var(--blue-light);" viewBox="0 0 400 40" preserveAspectRatio="none" height="40"><path d="M0,0 C100,40 300,40 400,0 L400,40 L0,40Z" fill="#fff"/></svg>
 
