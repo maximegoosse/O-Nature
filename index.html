@@ -324,6 +324,45 @@ h1.hero-h1 .a2{color:var(--gold);}
 .faq-a{display:none;font-size:14px;color:var(--grey);line-height:1.7;margin-top:12px;}
 .faq-item.open .faq-a{display:block;}
 
+/* ── TESTIMONIALS ── */
+.sec-testi{background:#fff;}
+.testi-stack{display:flex;flex-direction:column;gap:16px;margin-top:32px;}
+.testi-card{
+  background:var(--off);
+  border:1.5px solid #D8EBF5;
+  border-radius:20px;
+  padding:24px 22px;
+  position:relative;
+}
+.testi-card::before{
+  content:'\201C';
+  position:absolute;top:14px;right:20px;
+  font-family:'Sora',sans-serif;font-size:56px;font-weight:800;
+  color:var(--teal-light);line-height:1;
+}
+.testi-stars{display:flex;gap:3px;margin-bottom:12px;}
+.testi-star{color:#F59E0B;font-size:14px;}
+.testi-text{font-size:14px;color:var(--dark);line-height:1.7;font-weight:400;margin-bottom:18px;font-style:italic;}
+.testi-author{display:flex;align-items:center;gap:12px;}
+.testi-avatar{
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--teal),var(--blue-mid));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:#fff;
+  flex-shrink:0;
+}
+.testi-name{font-size:14px;font-weight:700;color:var(--dark);}
+.testi-loc{font-size:12px;color:var(--grey);margin-top:1px;}
+.testi-saving{
+  display:inline-flex;align-items:center;gap:5px;
+  background:var(--teal-light);color:var(--teal-dark);
+  font-size:10px;font-weight:700;padding:3px 10px;border-radius:100px;
+  margin-top:6px;
+}
+@media(min-width:768px){
+  .testi-stack{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+}
+
 /* ── CONTACT ── */
 .sec-contact{background:linear-gradient(160deg,var(--dark) 0%,#0D2B3A 100%);}
 .contact-perks{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
@@ -767,6 +806,62 @@ footer{background:#040C14;padding:40px 24px 28px;}
     <div class="faq-item"><div class="faq-q" onclick="faq(this)">Je peux résilier quand je veux ?<span class="faq-ico">+</span></div><p class="faq-a">Oui, sans pénalité. Prévenez-nous 30 jours à l'avance, on récupère le système. Simple.</p></div>
     <div class="faq-item"><div class="faq-q" onclick="faq(this)">Comment payer mon abonnement ?<span class="faq-ico">+</span></div><p class="faq-a">Orange Money, Wave, MTN MoMo, virement ou espèces — vous choisissez.</p></div>
     <div class="faq-item"><div class="faq-q" onclick="faq(this)">L'eau filtrée est meilleure pour la peau ?<span class="faq-ico">+</span></div><p class="faq-a">Oui. Sans chlore ni métaux, l'eau filtrée hydrate mieux la peau et améliore la digestion. Nos abonnés le ressentent dès les premières semaines.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section class="sec sec-testi" id="avis">
+<div class="inner">
+  <span class="tag tag-teal fu">Ils ont testé. Ils témoignent.</span>
+  <h2 class="h2 h2-dark fu d1">Ce que disent<br><em>nos premiers abonnés.</em></h2>
+  <div class="testi-stack">
+
+    <div class="testi-card fu d1">
+      <div class="testi-stars">
+        <span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span>
+      </div>
+      <p class="testi-text">« Avant, j'achetais des sachets deux fois par semaine pour toute la famille. Depuis O'Nature, j'ouvre juste le robinet. L'installation a pris moins de 2 heures, le technicien était propre et professionnel. Je ne reviendrai jamais en arrière. »</p>
+      <div class="testi-author">
+        <div class="testi-avatar">A</div>
+        <div>
+          <div class="testi-name">Awa Koné</div>
+          <div class="testi-loc">Cocody, Abidjan</div>
+          <div class="testi-saving">💰 Économise ~25 000 FCFA/mois</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card fu d2">
+      <div class="testi-stars">
+        <span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span>
+      </div>
+      <p class="testi-text">« Ce qui m'a convaincu c'est le modèle — je ne paie pas une machine, je paie un service. Si ça tombe en panne, c'est leur problème pas le mien. En 4 mois, zéro souci. L'eau a vraiment un goût différent, plus douce. »</p>
+      <div class="testi-author">
+        <div class="testi-avatar">S</div>
+        <div>
+          <div class="testi-name">Serge Diabaté</div>
+          <div class="testi-loc">Marcory, Abidjan</div>
+          <div class="testi-saving">✅ Abonné depuis 4 mois</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card fu d3">
+      <div class="testi-stars">
+        <span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span><span class="testi-star">★</span>
+      </div>
+      <p class="testi-text">« J'ai pris l'abonnement pour ma clinique. Mes patients boivent une eau propre, mon équipe aussi. Le rapport qualité mensuel me rassure. Pour un professionnel de santé, c'est indispensable. Je recommande à tous mes confrères. »</p>
+      <div class="testi-author">
+        <div class="testi-avatar">D</div>
+        <div>
+          <div class="testi-name">Dr. Fatou Bamba</div>
+          <div class="testi-loc">Plateau, Abidjan</div>
+          <div class="testi-saving">🏥 Abonnement Entreprise</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 </section>
