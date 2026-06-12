@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1A28"/>
+      <stop offset="50%" stop-color="#0D2B3A"/>
+      <stop offset="100%" stop-color="#0A3828"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1BBFA7"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1BBFA7"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle circles -->
+  <circle cx="1050" cy="100" r="300" fill="#2563EB" opacity="0.06"/>
+  <circle cx="150" cy="530" r="220" fill="#1BBFA7" opacity="0.07"/>
+
+  <!-- Left accent bar -->
+  <rect x="80" y="180" width="5" height="120" rx="3" fill="url(#teal)"/>
+
+  <!-- Logo icon -->
+  <rect x="80" y="80" width="52" height="52" rx="14" fill="url(#pill)"/>
+  <path d="M106 88 C106 88 93 101 93 108 C93 115 99 120 106 120 C113 120 119 115 119 108 C119 101 106 88 106 88Z" fill="white"/>
+
+  <!-- Logo text -->
+  <text x="146" y="116" font-family="Georgia, serif" font-size="32" font-weight="700" fill="white">O<tspan fill="#1BBFA7">'</tspan>Nature</text>
+
+  <!-- Ivory Coast flag strip -->
+  <rect x="80" y="148" width="22" height="14" rx="2" fill="#F77F00"/>
+  <rect x="102" y="148" width="22" height="14" rx="2" fill="#FFFFFF"/>
+  <rect x="124" y="148" width="22" height="14" rx="2" fill="#009A44"/>
+  <text x="156" y="159" font-family="Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.45)" letter-spacing="1">STARTUP IVOIRIENNE · ABIDJAN</text>
+
+  <!-- Main headline -->
+  <text x="80" y="270" font-family="Georgia, serif" font-size="78" font-weight="800" fill="white">L'eau pure,</text>
+  <text x="80" y="360" font-family="Georgia, serif" font-size="78" font-weight="800" fill="url(#teal)">au quotidien.</text>
+
+  <!-- Subline -->
+  <text x="80" y="420" font-family="Arial, sans-serif" font-size="26" fill="rgba(255,255,255,0.55)">Filtre installé gratuitement · Abonnement mensuel tout inclus</text>
+
+  <!-- Price pill -->
+  <rect x="80" y="460" width="320" height="62" rx="31" fill="url(#pill)"/>
+  <text x="240" y="499" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">Dès 19 990 FCFA / mois</text>
+
+  <!-- WhatsApp badge -->
+  <rect x="420" y="460" width="220" height="62" rx="31" fill="rgba(37,211,102,0.15)" stroke="#25D366" stroke-width="2"/>
+  <text x="530" y="499" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#25D366" text-anchor="middle">💬 WhatsApp</text>
+
+  <!-- Right visual — water drops -->
+  <circle cx="950" cy="315" r="180" fill="rgba(27,191,167,0.06)" stroke="rgba(27,191,167,0.15)" stroke-width="2"/>
+  <circle cx="950" cy="315" r="130" fill="rgba(27,191,167,0.08)" stroke="rgba(27,191,167,0.2)" stroke-width="1.5"/>
+  <circle cx="950" cy="315" r="80" fill="rgba(27,191,167,0.12)" stroke="rgba(27,191,167,0.3)" stroke-width="1"/>
+  <path d="M950 235 C950 235 910 278 910 300 C910 322 929 340 950 340 C971 340 990 322 990 300 C990 278 950 235 950 235Z" fill="url(#teal)" opacity="0.9"/>
+
+  <!-- URL -->
+  <text x="600" y="590" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.2)" text-anchor="middle">maximegoosse.github.io/O-Nature</text>
+</svg>
